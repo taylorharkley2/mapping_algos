@@ -12,7 +12,7 @@ input_vals = np.random.randint(1,7,size=2)
 correct_ans = input_vals.max()
 
 ## Create the model object
-model = nengo.Network(label="Addition")
+model = nengo.Network(label="Find Greater Value")
 with model:
     # Create ensembles each containing 100 leaky integrate-and-fire neurons
     input_neuron = nengo.Ensemble(500, dimensions=2, radius = 10) 
